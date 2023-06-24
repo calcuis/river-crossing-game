@@ -10,4 +10,4 @@ Modify the code and satisfy the requirements below:
 
 2. Define a transition status.
 
-Welcome to use ai tool(s) for solving the problem. i.e., Copilot, ChatGPT, whatever helpful
+Welcome to use AI tool(s) for solving the problem. i.e., Copilot, ChatGPT, whatever helpful
