@@ -10,4 +10,6 @@ Modify the code and satisfy the requirements below:
 
 2. Define a transition status.
 
+3. Add new character(s) and/or new condition(s)
+
 Welcome to use AI tool(s) for solving the problem. i.e., Copilot, ChatGPT, whatever helpful
