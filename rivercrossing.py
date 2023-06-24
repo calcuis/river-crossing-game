@@ -1,4 +1,4 @@
-# River Crossing Game
+# Initialize the game
 left_bank = ['farmer', 'wolf', 'goat', 'cabbage']
 right_bank = []
 boat = []
@@ -34,6 +34,9 @@ def move(item):
     elif item in boat:
         boat.remove(item)
         right_bank.append(item)
+    elif item in right_bank:
+        right_bank.remove(item)
+        boat.append(item)
 
 def play_game():
     print("Welcome to the River Crossing Game!")
@@ -64,16 +67,13 @@ def play_game():
         elif action == 'f':
             move('farmer')
         elif action == '':
-            if 'farmer' in boat:
-                boat.remove('farmer')
-                if len(boat) > 0:
-                    print("You rowed the boat to the other side.")
-                    print()
-                    move('farmer')
+            if len(boat) > 0:
+                if 'farmer' in boat:
+                    print("The farmer rowed the boat to the other side.")
                 else:
-                    print("The boat is empty. You need to move at least one item.")
+                    print("The farmer must be in the boat to row it.")
             else:
-                print("The farmer must be in the boat to row it.")
+                print("The boat is empty. You need to move at least one item.")
         else:
             print("Invalid command. Please try again.")
         print()
