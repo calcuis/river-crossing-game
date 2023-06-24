@@ -6,7 +6,7 @@ In this game, you have a farmer, a wolf, a goat, and a cabbage on the left bank 
 ## challenges
 Modify the code and satisfy the requirements below:
 
-1. Two items in the boat for each transit.
+1. Two items maximum in the boat for each transit.
 
 2. Define a transition status.
 
