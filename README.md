@@ -6,7 +6,7 @@ In this game, you have a farmer, a wolf, a goat, and a cabbage on the left bank 
 ## challenges
 Modify the code and satisfy the requirements below:
 
-1. Define a transition status. (see solution1.py a sample for reference)
+1. Define a transition status. (see solution1.py as a sample for reference)
 
 2. Two items maximum in the boat for each transit.
 
