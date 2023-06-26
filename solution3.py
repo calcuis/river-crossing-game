@@ -20,7 +20,7 @@ def validate_state():
         return False
     elif 'boy' in left_bank and 'girl' in left_bank and 'father' not in left_bank and 'mother' not in left_bank and 'oldman' not in left_bank:
         return False
-    elif 'dog' in left_bank and 'oldman' not in left_bank:
+    elif 'dog' in left_bank and 'oldman' not in left_bank and ('father' in left_bank or 'mother' in left_bank or 'girl' in left_bank or 'boy' in left_bank):
         return False
     elif 'father' in right_bank and 'boy' in right_bank and 'mother' not in right_bank:
         return False
@@ -28,7 +28,7 @@ def validate_state():
         return False
     elif 'boy' in right_bank and 'girl' in right_bank and 'father' not in right_bank and 'mother' not in right_bank and 'oldman' not in right_bank:
         return False
-    elif 'dog' in right_bank and 'oldman' not in right_bank:
+    elif 'dog' in right_bank and 'oldman' not in right_bank and ('father' in right_bank or 'mother' in right_bank or 'girl' in right_bank or 'boy' in right_bank):
         return False
     else:
         return True
