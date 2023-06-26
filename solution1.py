@@ -21,6 +21,10 @@ def validate_state():
         return False
     elif 'goat' in right_bank and 'cabbage' in right_bank and 'farmer' not in right_bank:
         return False
+    elif 'wolf' in boat and 'goat' in boat and 'farmer' not in boat:
+        return False
+    elif 'goat' in right_boat and 'cabbage' in right_boat and 'farmer' not in right_boat:
+        return False
     else:
         return True
 
