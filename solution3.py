@@ -30,6 +30,22 @@ def validate_state():
         return False
     elif 'dog' in right_bank and 'oldman' not in right_bank and ('father' in right_bank or 'mother' in right_bank or 'girl' in right_bank or 'boy' in right_bank):
         return False
+    elif 'father' in boat and 'boy' in boat and 'mother' not in boat:
+        return False
+    elif 'mother' in boat and 'girl' in boat and 'father' not in boat:
+        return False
+    elif 'boy' in boat and 'girl' in boat and 'father' not in boat and 'mother' not in boat and 'oldman' not in boat:
+        return False
+    elif 'dog' in boat and 'oldman' not in boat and ('father' in boat or 'mother' in boat or 'girl' in boat or 'boy' in boat):
+        return False
+    elif 'father' in right_boat and 'boy' in right_boat and 'mother' not in right_boat:
+        return False
+    elif 'mother' in right_boat and 'girl' in right_boat and 'father' not in right_boat:
+        return False
+    elif 'boy' in right_boat and 'girl' in right_boat and 'father' not in right_boat and 'mother' not in right_boat and 'oldman' not in right_boat:
+        return False
+    elif 'dog' in right_boat and 'oldman' not in right_boat and ('father' in right_boat or 'mother' in right_boat or 'girl' in right_boat or 'boy' in right_boat):
+        return False
     else:
         return True
 
